@@ -1,0 +1,398 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.first-color { 
+	background: #5585b5; 
+}
+	
+.second-color { 
+	background: #53a8b6; 
+}
+
+.third-color { 
+	background: #79c2d0; 
+}
+
+.fourth-color { 
+	background: #bbe4e9; 
+}
+
+.main{
+  background-color: #53a8b6;
+}
+
+
+/* --------------------nav bar------------------------*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(0, 0, 0, 0.6); /* Set a semi-transparent background color */
+  backdrop-filter: blur(10px); /* Apply a background blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  overflow: hidden;
+  position: sticky;
+  margin-top: 0px;
+  top: 0;
+}
+
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  
+/* --------------------intro------------------------*/
+
+
+.body{
+  font-family: "Sofia", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+.introduction {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+   background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,87,123,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.left {
+  width: 50%;
+  padding-top: 12%;
+  padding-left: 15%;
+  float: left;
+}
+
+.left img {
+  width: 70%;
+  border-radius: 10%;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  transition: transform ease .5s, box-shadow ease .5s;
+
+}
+
+.left img:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.right {
+  float: right;
+  width: 50%;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.right p {
+  font-style: italic;
+}
+.hello{
+  font-size:100px;
+  color: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+
+
+
+
+
+
+ /* .introduction {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+
+
+/* .child {
+  
+  /* border: 1px solid black; /* Optional: Add borders for visual separation */
+ /* padding: 10px; Optional: Add padding for better visuals */
+
+/* 
+#child1{
+  width: 50%;
+  height:100%;
+} */
+/* 
+.child img{
+ width: 100%;
+}   */
+
+/* ----------------qualification------------------ */
+
+
+
+
+
+
+
+.Qualifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #565e60;
+}
+
+.Quali {
+  
+  max-width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  background: rgb(25,0,36);
+  background: linear-gradient(90deg, rgba(25,0,36,0.8010853999803046) 0%, rgba(9,54,121,0.7170517865349264) 35%, rgba(0,212,255,0.33049716468618695) 100%);
+}
+
+.Quali .box {
+ 
+  width: 100%;
+  position: relative;
+  padding: 50px;
+  padding-right: 20%;
+  padding-left: 20%;
+  height: auto;
+  
+}
+
+.Quali .box .label {
+
+  position: relative;
+  padding: 10px;
+  background: linear-gradient(90deg,  rgba(0,212,255,0.33049716468618695)0%, rgba(9,54,121,0.7170517865349264) 35%,  100%);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.Quali .box .label::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+ 
+}
+
+.Quali .box.active .label::before {
+  content: '-';
+}
+
+
+
+.Quali .box .content {
+  border-radius: 5%;
+  color: rgb(0, 0, 0);
+  position: relative;
+  background: #75dae3cd;
+  height: 0;
+   /* display: none;   */
+  overflow: hidden;
+  transition: 0.5s;
+  
+  
+}
+
+.Quali .box.active .content {
+  height: 160px;
+  padding: 10px;
+  display: block;
+
+}
+EducationQualifications{
+  color: rgb(11, 11, 11);
+}
+
+
+/* ----------------Contact US----------------- */
+
+.Contact{
+  background-color: #052229;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+.icon{
+  background: rgba(136, 135, 151, 0.57);
+  background: linear-gradient(90deg, rgba(75, 73, 99, 0.558) 0%,rgba(137, 137, 227, 0.316)) 35%, rgba(194, 208, 210, 0.722) 100%));
+  
+  height: 100vh;
+  /* display: flex; */
+  /* margin-top: 20%; */
+  padding:10%;
+
+  border-radius: 30%;
+  margin: 10%;
+  
+ 
+}
+.Telephone{
+  
+  width: 75%;
+  padding-left: 10%;
+  display: flex;
+  margin: 10%;
+
+}
+.Email{
+  width: 75%;
+  padding-left: 10%;
+  display: flex;
+  margin: 10%;
+  
+  
+}
+.Facebook{
+  width: 75%;
+  padding-left: 10%;
+  display: flex;
+  margin: 10%;
+  
+}
+.GitHub{
+  width: 75%;
+  padding-left: 10%;
+  display: flex;
+  margin: 10%;
+}
+.email{
+  
+  padding-left: 20%;
+  display: flex;
+  
+  
+}
+.num{
+  
+  padding-left: 20%;
+  display: flex;
+  
+}
+
+.fb{
+  
+  padding-left: 20%;
+  display: flex;
+  
+  
+}
+
+.git{
+  
+  padding-left: 20%;
+  display: flex;
+  
+}
+
+
+
+
+/* ----------------caller button------------------ */
+.box{
+  width: 100px;
+  height: 100px;
+  color: rgb(38, 106, 166);
+  font-weight: bold;
+  border-radius: 100%;
+
+ } 
+
+ #b1{
+   position:fixed;
+   right: 1%;
+   bottom: 0;;
+ }
+
+ .box img{
+
+  margin-top: 35%; 
+  margin-left: 35%; 
+ }
+ a {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------- */
+
+
+/* ----------------------footer----------------------------------- */
+.footer{
+  background:#000 ;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+  
+.footer h3{
+  color: #ffffff;
+  margin-bottom: 20px ;
+}
+.footer-col-1,.footer-col-2 ,.footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-2{
+  flex:1 ;
+  text-align: center;
+}
+.footer-col-2 img{
+ width: 180px;
+ margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul{
+  list-style-type:none ;
+}
+.app-logo{
+  margin-top: 20px;
+}
+.app-logo img{
+  width: 50px;
+}
